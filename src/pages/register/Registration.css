@@ -1,0 +1,36 @@
+.under{
+    position: relative;
+}
+
+.under::after{
+    content: "";
+    position: absolute;
+
+    width: 30%;
+    height: 2px;
+    background-color: rgb(255, 223, 18);
+
+}
+.lineUp{
+    position: relative;
+}
+
+.lineUp::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 17rem;
+    background-color: rgb(165, 165, 165);
+
+}
+
+.lineUp::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 1px;
+    height: 17rem;
+    background-color: rgb(97, 96, 94);
+
+}

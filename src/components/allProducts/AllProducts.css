@@ -1,0 +1,34 @@
+.allpro {
+  position: relative;
+}
+.allpro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 20%;
+  height: 2px;
+  background-color: rgb(235, 97, 97);
+}
+.bottom-cart{
+    position: relative;
+}
+.bottom-cart::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+.group{
+  position: relative;
+}
+.group::after{
+  content: "";
+  position: absolute;
+  width: 0.1px;
+  height: 81%;
+  background-color: rgba(156, 156, 157, 0.437);
+  right: 0;
+  bottom:70px;
+}

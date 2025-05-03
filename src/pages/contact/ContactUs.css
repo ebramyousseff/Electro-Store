@@ -1,0 +1,12 @@
+.sort-title{
+    position: relative;
+}
+.sort-title::after{
+    content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px; 
+  width: 60%;
+  height: 2px; 
+  background-color: rgb(235, 97, 97); 
+}

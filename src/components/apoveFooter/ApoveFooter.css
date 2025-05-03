@@ -1,0 +1,12 @@
+.apove {
+    position: relative;
+  }
+  .apove::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 40%;
+    height: 2px;
+    background-color: rgb(235, 97, 97);
+  }

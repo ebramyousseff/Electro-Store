@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme{
+    --font-display: "Inter","sans-serif";
+    --color-main:#fed700;
+    --color-black:#000;
+    --color-white:#fff;
+}
+* {
+    scrollbar-width: thin;              /* Firefox */
+    scrollbar-color: #fed700 #000;   /* thumb color, track color */
+  }
+  
+  /* Chrome, Edge, Safari */
+  body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #f0f0f0; /* لون الخلفية (المسار) */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #fed700; /* لون شريط التمرير */
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-clip: content-box; /* يخلي اللون داخل الـ border */
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #e6c600; /* لون مختلف عند الـ hover */
+  }
