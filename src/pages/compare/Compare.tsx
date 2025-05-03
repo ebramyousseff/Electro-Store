@@ -3,6 +3,7 @@ import { removeFromCompare } from "../../redux/slices/compareSlice";
 import { addToCart } from "../../redux/slices/cartSlice";
 import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
+import { CartProduct } from "../../types";
 
 const Compare = () => {
   const dispatch = useAppDispatch();
@@ -56,7 +57,7 @@ const Compare = () => {
                 <button
                   className="text-black bg-main px-4 py-1 rounded-2xl font-semibold cursor-pointer"
                   onClick={() => {
-                    dispatch(addToCart(product));
+                    dispatch(addToCart(product as CartProduct));
                     dispatch(removeFromCompare(product.id));
                   }}
                 >

@@ -23,7 +23,6 @@ export type Product = {
   export type CartProduct = Product & {
     quantity: number
     totalPrice: number
-    title:string
   }
 
 

@@ -1,7 +1,7 @@
 import { FaCartShopping, FaArrowRightArrowLeft } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { Product } from "../../types";
+import { CartProduct, Product } from "../../types";
 import { useAppDispatch, useAppSelector } from "../../redux/store";
 import { addToCart } from "../../redux/slices/cartSlice";
 import Swal from "sweetalert2";
@@ -53,7 +53,7 @@ const SingleItem = ({ product }: props) => {
             </div>
             <FaCartShopping
               onClick={() => {
-                dispatch(addToCart(product));
+                dispatch(addToCart(product as CartProduct));
                 Swal.fire({
                   title: "Added to Cart!",
                   text: `${product.title

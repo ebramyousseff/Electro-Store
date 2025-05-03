@@ -8,7 +8,6 @@ import {
 
 const Cart = () => {
   const cartProducts = useAppSelector((state) => state.cart.products);
-  const { totalPrice } = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
 
   return (

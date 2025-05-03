@@ -2,6 +2,7 @@ import { useAppDispatch, useAppSelector } from "../../redux/store";
 import { addToCart } from "../../redux/slices/cartSlice";
 import { removeFromWishlist } from "../../redux/slices/wishListSlice";
 import { IoMdClose } from "react-icons/io";
+import { CartProduct } from "../../types";
 
 const Wishlist = () => {
   const dispatch = useAppDispatch();
@@ -37,7 +38,7 @@ const Wishlist = () => {
         <button
           className="text-black bg-main px-4 py-1 rounded-2xl font-semibold cursor-pointer"
           onClick={() => {
-            dispatch(addToCart(product));
+            dispatch(addToCart(product as CartProduct));
             dispatch(removeFromWishlist(product.id));
           }}
         >
